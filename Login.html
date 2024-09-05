@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Consulta de cep</title>
+  </head>
+  <body>
+    <!-- Título do formulário -->
+    <h2>Consultar CEP</h2>
+    <!--formulário de login-->
+    <form>
+      <!--Campo para o nome do usuario-->
+      <label for="username" class="label">Usuário:</label><br />
+      <input type="text" id="username" name="username" required /><br />
+      <!--Campo oara email-->
+      <label for="email" class="label">E-Mail:</label><br />
+      <input type="text" id="email" name="email" required />
+      <br />
+      <!--Campo para cep-->
+      <label for="cep" class="label">CEP:</label><br />
+      <input
+        type="text"
+        id="cep"
+        name="cep"
+        onblur="consultarCEP(this.value)"
+      />
+      <br />
+      <!--Campo para Logradouro-->
+      <label for="Logradouro" class="label">Logradouro</label><br />
+      <input type="text" id="Logradouro" name="Logradouro" /><br />
+      <!--Campo para Bairro-->
+      <label for="Bairro" class="label">Bairro</label><br />
+      <input type="text" id="Bairro" name="Bairro" /><br />
+      <!--Campo para Cidade-->
+      <label for="Cidade" class="label">Cidade</label><br />
+      <input type="text" id="Cidade" name="Cidade" /> <br />
+      <!--Campo para estado-->
+      <label for="Estado" class="label">Estado</label><br />
+      <input type="text" id="Estado" name="Estado" /><br />
+    </form>
+    <script src="cep.js"></script>
+  </body>
+</html>
