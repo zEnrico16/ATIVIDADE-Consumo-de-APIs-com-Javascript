@@ -8,7 +8,7 @@
       }
 
       function preencherCampos(dados) {
-        document.getElementById('logradouro').value = dados.logradouro || '';
+        document.getElementById('rua').value = dados.rua || '';
         document.getElementById('bairro').value = dados.bairro || '';
         document.getElementById('cidade').value = dados.localidade || '';
         document.getElementById('estado').value = dados.uf || '';
