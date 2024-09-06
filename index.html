@@ -14,19 +14,16 @@
     <form>
       <!--Campo para o nome do usuario-->
       <label for="username" class="label">Usuário:</label><br />
-      <input type="text" id="username" name="username" required /><br />
+      <input type="text" id="username" name="username" /><br />
       <!--Campo oara email-->
       <label for="email" class="label">E-Mail:</label><br />
-      <input type="text" id="email" name="email" required />
+      <input type="text" id="email" name="email" />
       <br />
       <!--Campo para cep-->
       <label for="cep" class="label">CEP:</label><br />
       <input
-        type="text"
-        id="cep"
-        name="cep"
-        onblur="consultarCEP(this.value)"
-      />
+        type="text" id="cep" name="cep"
+        onblur="consultarCEP(this.value)"/>
       <br />
       <!--Campo para Logradouro-->
       <label for="logradouro" class="label">Logradouro</label><br />

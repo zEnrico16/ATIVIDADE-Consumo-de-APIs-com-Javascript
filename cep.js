@@ -1,5 +1,4 @@
-<script>
-      function consultarCEP(cep) {
+    function consultarCEP(cep) {
         if (cep.length === 8) { // Verifica se o CEP tem 8 dígitos
           fetch(`https://viacep.com.br/ws/${cep}/json/`)
             .then(response => response.json())
@@ -14,4 +13,3 @@
         document.getElementById('cidade').value = dados.localidade || '';
         document.getElementById('estado').value = dados.uf || '';
       }
-    </script>
