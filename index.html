@@ -12,31 +12,33 @@
     <h2>Consultar CEP</h2>
     <!--formulário de login-->
     <form>
+    
       <!--Campo para o nome do usuario-->
-      <label for="username" class="label">Usuário:</label><br />
-      <input type="text" id="username" name="username" /><br />
+      <label for="username" class="label">Usuário:</label><br>
+      <input type="text" id="username" name="username" class="input" required/><br>
       <!--Campo oara email-->
-      <label for="email" class="label">E-Mail:</label><br />
-      <input type="text" id="email" name="email" />
+      <label for="email" class="label">E-Mail:</label><br>
+      <input type="text" id="email" name="email" class="input" required />
       <br />
       <!--Campo para cep-->
-      <label for="cep" class="label">CEP:</label><br />
+      <label for="cep" class="label">CEP:</label><br>
       <input
         type="text" id="cep" name="cep"
-        onblur="consultarCEP(this.value)"/>
+        class="input" onblur="consultarCEP(this.value)"/>
       <br />
       <!--Campo para Logradouro-->
-      <label for="logradouro" class="label">Logradouro</label><br />
-      <input type="text" id="logradouro" name="logradouro" /><br />
+      <label for="logradouro" class="label">Logradouro</label><br>
+      <input type="text" id="logradouro" name="logradouro" class="input"/><br />
       <!--Campo para Bairro-->
-      <label for="bairro" class="label">Bairro</label><br />
-      <input type="text" id="bairro" name="bairro" /><br />
+      <label for="bairro" class="label">Bairro</label><br>
+      <input type="text" id="bairro" name="bairro" class="input"/><br />
       <!--Campo para Cidade-->
-      <label for="cidade" class="label">Cidade</label><br />
-      <input type="text" id="cidade" name="cidade" /> <br />
+      <label for="cidade" class="label">Cidade</label><br>
+      <input type="text" id="cidade" name="cidade" class="input"/> <br />
       <!--Campo para estado-->
-      <label for="estado" class="label">Estado</label><br />
-      <input type="text" id="estado" name="estado" /><br />
+      <label for="estado" class="label">Estado</label><br>
+      <input type="text" id="estado" name="estado" class="input"/><br />
+    </class>
       
     </form>
     <!--Adicionando Java Script-->
