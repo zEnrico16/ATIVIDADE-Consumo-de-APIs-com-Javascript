@@ -47,7 +47,7 @@ html {
 .quadrado {
     width: 500px;
     height: 700px;
-    background-color:rgb(5, 44, 78);
+    background-color:rgb(233, 237, 255);
     position: absolute;
     /* Necessário para usar z-index */
     z-index: -1;
